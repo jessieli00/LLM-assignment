@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Brand Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .collection img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .collection-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Brand</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Collections</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Latest Collections</h2>
+        <div class="collection">
+            <div class="collection-item">
+                <img src="image1.jpg" alt="Collection 1">
+                <p>Collection 1 Description</p>
+            </div>
+            <div class="collection-item">
+                <img src="image2.jpg" alt="Collection 2">
+                <p>Collection 2 Description</p>
+            </div>
+            <div class="collection-item">
+                <img src="image3.jpg" alt="Collection 3">
+                <p>Collection 3 Description</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript code can go here for interactivity
+    </script>
+</body>
+</html>
