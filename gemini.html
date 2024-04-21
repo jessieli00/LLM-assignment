@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Brand</title>
+<link rel="stylesheet" href="gemini.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      </a>
+    <nav>
+      <ul>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Hero Image">
+    <div class="hero-text">
+      <h1>New Collection</h1>
+      <p>Discover timeless pieces for the modern you.</p>
+      <a href="#collections" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="collections">
+    <h2>Collections</h2>
+    <div class="collection-container">
+      <div class="collection">
+        <img src="images/collection1.jpg" alt="Collection 1">
+        <h3>Spring/Summer 2024</h3>
+        <p>Embrace the warmth with light fabrics and vibrant colors.</p>
+        <a href="#">Shop Now</a>
+      </div>
+      <div class="collection">
+        <img src="images/collection2.jpg" alt="Collection 2">
+        <h3>Fall/Winter 2023</h3>
+        <p>Indulge in timeless silhouettes and luxurious textures.</p>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a brand passionate about creating high-quality fashion that empowers individuals to express their unique style.</p>
+    <p>Our commitment to ethical practices and sustainable materials ensures you look good and feel good.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for any inquiries or for a personalized shopping experience.</p>
+    <form action="#">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; Fashion Brand 2024</p>
+    <ul>
+      <li><a href="#">Social Media 1</a></li>
+      <li><a href="#">Social Media 2</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  navigation.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
