@@ -6,6 +6,61 @@
     <title>Fashion Brand</title>
     <style>
         /* CSS styles will go here */
+        body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 20px;
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.collection img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.collection h3 {
+    margin-top: 10px;
+}
+
+.collection p {
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -45,3 +100,6 @@
     </script>
 </body>
 </html>
+document.querySelector('h1').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
